@@ -11,6 +11,8 @@ Ein Wochenplan in Bildern für Kinder, die noch nicht lesen können, auf einem *
 | Samstag, Sonntag | **Wochenende, keine Kita** (Familie unter einem Herz) |
 | Berliner Feiertage, Kita-Schließtage | wie Wochenende |
 
+**Live:** https://kita-board-eosin.vercel.app · Firmware: https://kita-board-eosin.vercel.app/flash
+
 Oben zeigt eine Wochenleiste Mo–So, der heutige Tag ist groß und rot markiert. Unten steht klein eine Textzeile
 für Erwachsene.
 
