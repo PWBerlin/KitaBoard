@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "regions": ["fra1"],
+  "functions": {
+    "api/*.js": { "memory": 1024, "maxDuration": 15, "includeFiles": "fonts/**" }
+  },
+  "rewrites": [{ "source": "/flash", "destination": "/flash.html" }]
+}

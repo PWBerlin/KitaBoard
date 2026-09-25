@@ -1,0 +1,12 @@
+zectrix-note4c-v1.8.10-merged-firmware.bin
+
+TRMNL firmware, Zectrix NOTE4 / NOTE4C port by LitoMore, fork of usetrmnl/trmnl-firmware.
+Unmodified release binary, redistributed under the GNU General Public License v3.0.
+
+Release:        https://github.com/LitoMore/trmnl-firmware/releases/tag/zectrix-v1.8.10
+Source code:    https://github.com/LitoMore/trmnl-firmware/tree/zectrix-v1.8.10
+                (branch "zectrix", build target zectrix_note4c, see docs/zectrix.md)
+License:        https://www.gnu.org/licenses/gpl-3.0.html
+SHA-256:        f955c0e1fe293807fae29914495d246d8a44daa6777900c11e2ece7d59b38376
+
+Flash at offset 0x0 (complete image). Only for the four-colour ZecTrix NOTE4C (ESP32-S3 N16R8).

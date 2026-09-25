@@ -1,0 +1,15 @@
+{
+  "name": "kita-board",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kita-Wochenplan in Bildern für das ZecTrix NOTE4C (TRMNL-Firmware)",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "preview": "node scripts/preview.js"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.9"
+  }
+}

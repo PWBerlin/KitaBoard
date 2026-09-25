@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kita-Board</title>
+  <style>
+    :root { --bg: #f4f1ea; --fg: #111; --muted: #666; --frame: #222; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #161616; --fg: #eee; --muted: #aaa; --frame: #444; } }
+    body { margin: 0; padding: 24px 16px; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, sans-serif; }
+    main { max-width: 860px; margin: 0 auto; }
+    .today { background: var(--frame); padding: 16px; border-radius: 18px; display: inline-block; max-width: 100%; box-sizing: border-box; }
+    img { display: block; width: 100%; height: auto; image-rendering: pixelated; background: #fff; }
+    .today img { width: 800px; max-width: 100%; }
+    .week { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; margin-top: 16px; }
+    .week figure { margin: 0; } .week figcaption { color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Kita-Board</h1>
+  <p><a href="/flash"><b>→ Firmware aufs NOTE4C installieren</b></a> (Chrome/Edge am Computer, USB-Kabel)</p>
+  <h2>Heute</h2>
+  <div class="today"><img src="/api/screen" alt="Heutiges Bild"></div>
+  <h2>Die ganze Woche</h2>
+  <div class="week" id="week"></div>
+</main>
+<script>
+  const names = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'];
+  const now = new Date();
+  const monday = new Date(now); monday.setDate(now.getDate() - ((now.getDay() + 6) % 7));
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(monday); d.setDate(monday.getDate() + i);
+    const iso = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+    const f = document.createElement('figure');
+    f.innerHTML = '<img loading="lazy" alt="' + names[i] + '" src="/api/screen?date=' + iso + '"><figcaption>' + names[i] + '</figcaption>';
+    document.getElementById('week').appendChild(f);
+  }
+</script>
+</body>
+</html>
