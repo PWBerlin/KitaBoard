@@ -5,7 +5,7 @@ Ein Wochenplan in Bildern für Kinder, die noch nicht lesen können, auf einem *
 
 | Tag | Bild |
 | --- | --- |
-| Montag – Freitag | **Kita** (Haus mit rotem Dach, Fahne und Kindern) |
+| Montag – Freitag | **Kita** (rote Rutsche, Kinder an den Händen) |
 | Donnerstag | Kita **+ Schwimmen** (Kopf mit Badekappe über Wellen) |
 | Freitag | Kita **+ Spielzeugtag** (Teddybär) |
 | Samstag, Sonntag | **Wochenende, keine Kita** (Familie unter einem Herz) |
