@@ -12,7 +12,7 @@ sctx.fillStyle = '#888'; sctx.fillRect(0, 0, sheet.width, sheet.height);
 sctx.imageSmoothingEnabled = false;
 for (let i = 0; i < 7; i++) {
   const plan = dayPlan(new Date(monday.getTime() + i * 86400000), new Set());
-  const { png } = renderPlan(plan, { percent: 80 });
+  const { png } = renderPlan(plan, { percent: 80 }, new Set());
   await writeFile(`out/day-${i + 1}.png`, png);
   const img = await loadImage(png);
   sctx.drawImage(img, (i % 2) * 820, Math.floor(i / 2) * 620, 800, 600);

@@ -7,13 +7,13 @@ Ein Wochenplan in Bildern für Kinder, die noch nicht lesen können, auf einem *
 | --- | --- |
 | Montag – Freitag | **Kita** (rote Rutsche, Kinder an den Händen) |
 | Donnerstag | Kita **+ Schwimmen** (Kopf mit Badekappe über Wellen) |
-| Freitag | Kita **+ Spielzeugtag** (Teddybär) |
-| Samstag, Sonntag | **Wochenende, keine Kita** (Familie unter einem Herz) |
+| Freitag | Kita **+ Spielzeugtag** (Feuerwehrauto) |
+| Samstag, Sonntag | **Wochenende, keine Kita** (Haus mit Familie) |
 | Berliner Feiertage, Kita-Schließtage | wie Wochenende |
 
 **Live:** https://kita-board-eosin.vercel.app · Firmware: https://kita-board-eosin.vercel.app/flash
 
-Oben zeigt eine Wochenleiste Mo–So, der heutige Tag ist groß und rot markiert. Unten steht klein eine Textzeile
+Oben zeigt eine Wochenleiste Mo–So, der heutige Tag ist groß und rot markiert. Unter jedem Tag steht eine kleine Rutsche (Kita) oder ein kleines Haus (zu Hause, auch an Feiertagen und Schließtagen); vergangene Tage sind durchgestrichen, so sieht das Kind ohne Zahlen, wie viele Kita-Tage bis zum Wochenende bleiben. Unten steht klein eine Textzeile
 für Erwachsene.
 
 ![Die ganze Woche](docs/woche.png)
